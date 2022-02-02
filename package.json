@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "esbuild:build": "node --require esbuild-register bundler.ts",
+    "sass:build": "sass -I scss_utils src/with_use.scss dist/with_use.css; sass -I scss_utils src/without_use.scss dist/without_use.css"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.17",
+    "esbuild-register": "^3.3.2",
+    "esbuild-sass-plugin": "^2.2.1",
+    "sass": "^1.49.7"
+  }
+}
